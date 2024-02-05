@@ -1,0 +1,25 @@
+.hidden {
+    display: none;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("/Images/Leonardo_Diffusion_XL_Generate_a_website_background_for_a_webs_2\ \(1\).jpg");
+  
+    /* Full height */
+    height: 100%;
+    width: 100%;
+  
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .rcorners1 {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;
+    width: 500px;
+    height: 95%;
+  }

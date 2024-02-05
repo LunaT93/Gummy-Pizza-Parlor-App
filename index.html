@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>Gummy Pizza Parlor</title>
+</head>
+<body class = "bg">
+<div class = "rcorners1">
+  <h1>Welcome to the Gummy Pizza Shoppe</h1>
+  <form id ="pizzaOptions">
+    <h2>Size</h2>
+    <input id="smallPizza" type="radio" name="pizzaSize" value="small">
+    <label for="smallPizza">Small</label>
+    <input id="largePizza" type="radio" name="pizzaSize" value="large">
+    <label for="largePizza">Large</label>
+    <h2>Toppings</h2>
+    <input id="gummeronis" type="checkbox" name="pizzaTopping" value="Gummeronis">
+    <label for="gummeronis">Gummeronis</label>
+    <input id="gelapenos" type="checkbox" name="pizzaTopping" value="Gelapenos">
+    <label for="gelapenos">Gelapenos</label>
+    <input id="resinousBananaPeppers" type="checkbox" name="pizzaTopping" value="Resinous Banana Peppers">
+    <label for="resinousBananaPeppers">Resinous Banana Peppers</label>
+    <input id="jeez" type="checkbox" name="pizzaTopping" value="Jeez">
+    <label for="jeez">Jeez</label>
+    <input id="swedishFish" type="checkbox" name="pizzaTopping" value="Swedish Fish">
+    <label for="swedishFish">Swedish Fish</label>
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+    <button id="clearOrders">New Order</button>
+
+
+  <div id="order" class="hidden">
+    <h2>Order Summary:</h1>
+    <h2>Price: $<span id="spanPrice"></span></h2> 
+    <h2>Your Pizza:</h2>
+  </div>
+</div>
+</body>
+</html>
