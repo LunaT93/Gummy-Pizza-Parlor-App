@@ -6,11 +6,13 @@ function Pizza(size, toppings) {
 }
 
 Pizza.prototype.getCost = function() {
-    let cost = 2.00;
-    const size = "reg" //default size is regular;
+    let cost = 0.00;
     switch (this.size) {
         case ("small"):
             cost = 1.00; // small is $1
+            break;
+        case ("reg"):
+            cost = 2.00;
             break;
         case ("large"):
             cost = 3.00; // large is $3
