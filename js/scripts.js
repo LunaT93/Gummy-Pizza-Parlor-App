@@ -22,10 +22,9 @@ Pizza.prototype.getCost = function() {
     return cost;
 }
 
-// Everything above here is working
+//UI Logic
+let totalCost = 0;
 
-//UI Logic
-//UI Logic
 function handleForm(event) {
     event.preventDefault();
 
@@ -52,7 +51,8 @@ function handleForm(event) {
 
     //get and print cost
     let cost = newPizza.getCost();
-    document.getElementById('spanPrice').textContent = cost;
+    totalCost += cost; // Update total cost
+    document.getElementById('spanPrice').textContent = totalCost.toFixed(2); // Display total cost
 }
 
 window.addEventListener("load", function() {
@@ -65,5 +65,6 @@ window.addEventListener("load", function() {
         ulElements.forEach(function(ul) {
             ul.remove();
         });
+        totalCost = 0.00; // Reset total cost
     });
 });

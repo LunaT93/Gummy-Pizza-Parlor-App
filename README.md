@@ -1,6 +1,19 @@
-Hello. Welcome to the gummy pizza parlor. I am going to prioritize getting this finished by noon (if I have to take time until 1 I may). So, I am going to have very limited functionality. I am going to have only a few toppings.
+Technologies Used
+-JavaScript
+-HTML
+-CSS
 
-Toppings: Jelly cheeze, gummeronis, gelatin jalapenos, resinous banana peppers.
+Description
+Input pizza size and toppings. Default size is regular
+
+Setup/Installation Requirements
+Download from github and go live in VS code. Click submit to see your sentence. Enter new numbers and it will clear the old sentence.
+Known Bugs
+Adding additional pizzas not yet supported. 
+Now supported as of 2.5.25 at 2:34PM
+
+License
+Copyright (c) Luna Burleson 2024
 
 ******************************************************************
 
@@ -108,3 +121,5 @@ Pizza.prototype.getCost = function() {
 Should output cost.
 
 Result: Worked.
+
+I updated this because the default 'reg' pizza was not working. 
